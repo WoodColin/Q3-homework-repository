@@ -1,0 +1,30 @@
+ import java.util.Scanner;
+
+class Recur2 {
+   
+    
+    static void printFun(int test)
+    {
+        if (test < 1)
+            return;
+ 
+        else {
+            System.out.printf("%d ", test);
+ 
+            // Statement 2
+            printFun(test - 1);
+ 
+            System.out.printf("%d ", test);
+            return;
+        }
+    }
+        
+     
+    public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter Value");
+    int test = myObj.nextInt();
+    printFun(test);
+  }
+}
+
