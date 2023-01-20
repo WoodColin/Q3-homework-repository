@@ -1,0 +1,25 @@
+public class Polymorphism{
+    public void mammal(){
+        System.out.println("The mamals have Mammarian glands");
+    }
+}
+class dog extends Polymorphism{ //extends keyword. is used to extend the class to the original class
+    public void mammal(){
+        System.out.println("is a mammal");
+    }
+}
+class snail extends Polymorphism{
+    public void Mammal(){
+        System.out,println("not a mammal")
+    }
+}
+
+class MainSpecies{
+    public static void main(String[] args) {
+        Polymorphism myPolymorphism = new Polymorphism(); // Creates a polymorphise objects
+        Polymorphism myDog = new Dog();                   // Creates a Dog object
+        Polymorphism mySnail = new Snail();               // Creates a Snail object
+        MyPolymorphism.mammal().
+        myDog.mammal();
+        mySnail.mammal();
+    }
